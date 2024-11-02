@@ -1,3 +1,5 @@
+package aprendendoStream;
+
 import java.util.stream.Stream;
 
 public class AprendedendoMatch {

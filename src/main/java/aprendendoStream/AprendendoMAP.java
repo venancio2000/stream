@@ -1,11 +1,13 @@
+package aprendendoStream;
+
 import java.util.stream.Stream;
 
-public class AprendendoFilter {
+public class AprendendoMAP {
     public static void main(String[] args) {
         Double[] notas = {5.5, 5.5, 7.3, 7.2};
         Stream.of(notas)
-                .filter(nota -> nota >= 7)
-                .map(nota -> "Você foi aprovado com nota: + nota " + nota)
+                .map(nota -> nota + 2)
+                .map(nota -> nota -1)
                 .forEach(System.out::println);
     }
 }
